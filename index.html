@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MASNA3 — مَصنع</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header><div class="wrap"><div class="logo">MASNA3<small>مَصنع</small></div>
+<nav><button data-v="home">الرئيسية</button><button data-v="templates">القوالب</button><button data-v="projects">مشاريعي</button></nav></div></header>
+<main>
+<section id="home" style="padding:0"><div class="hero"><div class="wrap"><h1>حوّل فكرتك إلى موقع ويب جاهز للتنفيذ</h1><p>اكتب فكرتك، وسنحللها إلى خطة عملية ونولّد لك ملفات حقيقية قابلة للتشغيل والتعديل. كل شيء يعمل في متصفحك ولا تغادر بياناتك جهازك.</p>
+<div class="box"><textarea id="idea" placeholder="مثال: متجر لبيع القهوة المختصة مع سلة مشتريات"></textarea><input id="pname" placeholder="اسم المشروع (اختياري)"><select id="type"></select><button class="btn" id="go">حلّل الفكرة وأنشئ المشروع</button></div></div></div></section>
+<section id="templates"><div class="wrap"><h2>القوالب الجاهزة</h2><div id="tgrid" class="grid"></div></div></section>
+<section id="projects"><div class="wrap"><h2>مشاريعي (محفوظة في هذا المتصفح)</h2><div id="plist" class="grid"></div></div></section>
+<section id="work"><div class="wrap"><label>اسم المشروع<input id="wname"></label>
+<div class="bar tabs"><button data-t="plan">الخطة</button><button data-t="files">الملفات</button><button data-t="preview">المعاينة</button><button class="btn" id="dl">تنزيل ZIP</button><button class="btn ghost" id="regen">إعادة التوليد</button></div>
+<div id="t-plan" class="card"></div>
+<div id="t-files" class="card"><select id="fsel"></select><textarea id="fed" spellcheck="false"></textarea><small>يُحفظ التعديل تلقائيًا عند الخروج من الحقل.</small></div>
+<div id="t-preview"><iframe id="pv" sandbox="allow-scripts" title="معاينة"></iframe></div></div></section>
+</main><footer>MASNA3 — النسخة 1.0 · مواقع الويب فقط · تعمل بدون إنترنت</footer><div id="toast"></div>
+<script src="js/zip.js"></script><script src="js/analyzer.js"></script><script src="js/generator.js"></script><script src="js/storage.js"></script><script src="js/app.js"></script>
+</body></html>
